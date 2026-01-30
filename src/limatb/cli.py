@@ -13,7 +13,6 @@ import functools
 
 import click
 
-from .util import scan
 
 
 log = logging.getLogger("limatb")
@@ -73,6 +72,7 @@ def cli(ctx):
 @table_style
 @max_width
 def lima_scan(timeout, table_style, max_width):
+    from .util import scan
     """scan network for detectors"""
     tables, errors = asyncio.run(scan(cli.scans, timeout))
     for name, table in tables:
