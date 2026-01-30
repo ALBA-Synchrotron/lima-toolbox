@@ -49,6 +49,6 @@ setup(
     long_description_content_type="text/markdown",
     keywords="Lima, CLI, toolbox, detector",
     url="https://github.com/tiagocoutinho/lima-toolbox",
-    version="1.0.0",
+    version="1.1.0",
     python_requires=">=3.5",
 )
